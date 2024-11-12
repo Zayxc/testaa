@@ -52,7 +52,7 @@ wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
 bash acme.sh --install
 rm acme.sh
 cd .acme.sh
-bash acme.sh --register-account -m senowahyu62@gmail.com
+bash acme.sh --register-account -m jungleym@gmail.com
 bash acme.sh --issue --standalone -d $domain --force
 bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
 
@@ -104,7 +104,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess/",
+          "path": "/worryfree",
           "headers": {
             "Host": ""
           }
@@ -133,7 +133,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess/",
+          "path": "/worryfree",
           "headers": {
             "Host": ""
           }
@@ -175,7 +175,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless/",
+          "path": "/vless",
           "headers": {
             "Host": ""
           }
@@ -211,7 +211,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless/",
+          "path": "/vless",
           "headers": {
             "Host": ""
           }
@@ -340,8 +340,8 @@ END
 # / / Installation Xray Service
 cat > /etc/systemd/system/xray.service << END
 [Unit]
-Description=Xray Service By Akbar Maulana
-Documentation=https://t.me/Akbar218
+Description=Xray Service By TESTER
+Documentation=TESTER
 After=network.target nss-lookup.target
 
 [Service]
@@ -366,6 +366,9 @@ iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
+iptables -I INPUT -p tcp -m tcp --dport 1723 -j ACCEPT
+iptables -I INPUT -p tcp -m udp --dport 1723 -j ACCEPT
+iptables -I INPUT -p gre -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
@@ -437,7 +440,7 @@ cat > /etc/trojan-go/config.json << END
   },
   "websocket": {
     "enabled": true,
-    "path": "/trojango",
+    "path": "/trojan-ws",
     "host": "$domain"
   },
     "api": {
@@ -458,8 +461,8 @@ END
 # Installing Trojan Go Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go Service By Akbar Maulana
-Documentation=https://t.me/Akbar218
+Description=Trojan-Go Service By TESTER
+Documentation=TESTER
 After=network.target nss-lookup.target
 
 [Service]
