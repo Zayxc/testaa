@@ -1,12 +1,6 @@
+Zayxc/testaa
+
 #!/bin/bash
-if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
-		exit 1
-fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-		echo "OpenVZ is not supported"
-		exit 1
-fi
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -19,25 +13,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ssh"
+akbarvpn="raw.githubusercontent.com/Zayxc/testaa/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/sstp"
+akbarvpnn="raw.githubusercontent.com/Zayxc/testaa/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/Zayxc/testaa/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/Zayxc/testaa/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
