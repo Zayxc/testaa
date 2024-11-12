@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/senowahyu62/scriptvps/main/backup"
+akbarvpn="raw.githubusercontent.com/Zayxc/testaa/main/backup"
 
 apt install rclone -y
 printf "q\n" | rclone config
@@ -36,8 +36,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user bckupvpns@gmail.com
-from bckupvpns@gmail.com
+user jungleym@gmail.com
+from jungleym@gmail.com
 password Yangbaru1 
 logfile ~/.msmtp.log
 EOF
