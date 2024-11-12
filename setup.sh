@@ -35,8 +35,7 @@ akbarvpnnnnnnnnnn="raw.githubusercontent.com/Zayxc/testaa/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
+
 
 rm -f setup.sh
 clear
@@ -78,7 +77,7 @@ rm -f /root/ohp.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://t.me/Akbar218
+Documentation=TESTER
 
 [Service]
 Type=oneshot
