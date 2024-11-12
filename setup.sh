@@ -10,6 +10,16 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
+# start
+apt update -y
+
+apt install curl -y
+apt install software-properties-common -y
+apt install -y nano
+apt install -y sudo
+sudo apt-get install wget screen
+
+
 # Link Hosting Kalian Untuk Ssh Vpn
 akbarvpn="raw.githubusercontent.com/Zayxc/testaa/main/ssh"
 # Link Hosting Kalian Untuk Sstp
