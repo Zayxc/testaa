@@ -78,7 +78,7 @@ cat > /etc/xray/config.json << END
   },
   "inbounds": [
     {
-      "port": 8443,
+      "port": 443,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -149,7 +149,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 8443,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -360,14 +360,13 @@ END
 
 # // Enable & Start Service
 # Accept port Xray
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
-iptables -I INPUT -p tcp -m tcp --dport 1723 -j ACCEPT
-iptables -I INPUT -p tcp -m udp --dport 1723 -j ACCEPT
+
 iptables -I INPUT -p gre -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
