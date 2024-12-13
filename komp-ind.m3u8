@@ -4,7 +4,8 @@
 http://cdngb196.indihometv.com/joss/133/kompastv/chunklist_w178600471_b494100_sleng.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=684100,RESOLUTION=640x360
 http://cdngb196.indihometv.com/joss/133/kompastv/chunklist_w178600471_b684100_sleng.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=494100,RESOLUTION=226x240
-http://cdngb196.indihometv.com/joss/133/kompastv/chunklist_w178600471_b494100_sleng.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1004100,RESOLUTION=960x540
+http://cdngb196.indihometv.com/joss/133/kompastv/chunklist_w178600471_b1004100_sleng.m3u8
+
 
 
